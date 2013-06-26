@@ -11,7 +11,7 @@ Using node:
 npm install darbak --save-dev
 ```
 
-All task are written in coffee-script so you may need to install node's coffee-script globally:
+The code is written in coffee-script so you may need to install node's coffee-script globally:
 ```shell
 npm install -g coffee-script
 ```
@@ -43,7 +43,7 @@ _(Nothing yet)_
 ## Misc
 Re-factored from:
 - [grunt-contrib-copy task](https://github.com/gruntjs/grunt-contrib-copy/blob/65600edcd99ac911d0021e30827c080097d5a895/tasks/copy.js), May 13, 2013.
-- [docco](https://github.com/jashkenas/docco)
+- [docco](https://github.com/jashkenas/docco/blob/8fe2924dd7db9cfb5f6988627987b5738932b973/docco.litcoffee), June 25, 2013.
 
 
 Licensed under the [MIT license](LICENSE-MIT).

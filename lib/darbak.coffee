@@ -36,9 +36,7 @@ module.exports = (contents, name) ->
   closeCurrentSection()
 
   fullCode += "\n\treturn"
-  res = coffee.compile fullCode, {bare: true}
-  res += name + ".src = " + JSON.stringify(contents) + "\n"
-  res += name + ".sections = " + JSON.stringify(sections) + "\n"
-  res += name + ".name = " + name + "\n"
-  res += "darbak = " + name + "\n"
-  return res
+  return coffee.compile(fullCode, {bare: true}) +
+         name + ".src = " + JSON.stringify(contents) + ";\n" +
+         name + ".sections = " + JSON.stringify(sections) + ";\n" +
+         name + ".name = " + name + ";\n"
