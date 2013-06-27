@@ -1,20 +1,27 @@
-#Darbak
+## Demo
 
-Compiles **literate-iced-coffee-script** into a **javascript** file which includes its **source** and its **docco-style** documentation.
+This demo section is actually runnable code written in [literate](http://coffeescript.org/#literate)-[iced](http://maxtaco.github.io/coffee-script/)-[coffee-script](http://coffeescript.org)
+This section was rendered using:
 
-Upon loading this page a literate-iced-coffee-script function called `darbak` was included. You are currently reading the documentation of that function - it is constructed from `darbak.sections`. You can also check its complete source code at `.src`
+`for (var i = 0; i < test.sections.length; i++){`
 
----
+`  document.write(test.sections[i].docsHtml);`
 
-You can open the console and run this code: `var c = new darbak()`
+`  document.write(test.sections[i].codeHtml);`
+
+`}`
+
+Notice that any client side rendering method, such as angular-js templates, could have easily been used. 
+
+You can view the complete source of this section [here](https://raw.github.com/amitport/darbak/master/test/fixtures/test.coffee.md).
+
+You can open the console and run this code using: `var t = new test()`
+
 	alert('welcome to darbak!')
-It's **iced**-coffee-script
+And don't forget it's **iced**-coffee-script:
 
 	@saveForLater = (@later) -> 
 	await @saveForLater defer()
-
-the code waits until you call `c.later()`, only then it will run the next block:
+The code waits until you call `t.later()`, only then it will run the next block:
 
 	alert('now is later!')
-	
-	

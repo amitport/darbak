@@ -1,6 +1,6 @@
 # darbak
 
-> Compiles literate-iced-coffee-script and append it with its source and parsed documentation.
+> Compiles literate-iced-coffee-script and appends it with its source and formatted documentation.
 
 Useful for creating [Docco](http://jashkenas.github.io/docco/)-like code pages that can run while being displayed, compile with client side templates, and be edited on the client side.
 
