@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Darbak</title>
+  <meta name="description" content="Compiles literate-iced-coffee-script and appends it with its source and formatted documentation.">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Darbak</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Compiles literate-iced-coffee-script and appends it with its source and formatted documentation.</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/amitport/darbak/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/amitport/darbak/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/amitport/darbak" class="code">View Darbak on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a name="darbak" class="anchor" href="#darbak"><span class="octicon octicon-link"></span></a>darbak</h1>
+
+<blockquote>
+<p>Compiles literate-iced-coffee-script and appends it with its source and formatted documentation.</p>
+</blockquote>
+
+<p>Useful for creating <a href="http://jashkenas.github.io/docco/">Docco</a>-like code pages that can run while being displayed, compile with client side templates, and be edited on the client side.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Using node:</p>
+
+<pre lang="shell"><code>npm install darbak --save-dev
+</code></pre>
+
+<p>The code is written in coffee-script so you may need to install node's coffee-script globally:</p>
+
+<pre lang="shell"><code>npm install -g coffee-script
+</code></pre>
+
+<h2>
+<a name="includes-a-grunt-plugin" class="anchor" href="#includes-a-grunt-plugin"><span class="octicon octicon-link"></span></a>Includes a grunt plugin</h2>
+
+<p>Requires Grunt <code>~0.4.1</code></p>
+
+<p>If you haven't used <a href="http://gruntjs.com/">Grunt</a> before, be sure to check out the <a href="http://gruntjs.com/getting-started">Getting Started</a> guide, as it explains how to create a <a href="http://gruntjs.com/sample-gruntfile">Gruntfile</a> as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:</p>
+
+<p>Once the plugin node package has been installed, it may be enabled inside your Gruntfile with this line of coffee-script:</p>
+
+<div class="highlight"><pre><span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span> <span class="s">'darbak'</span>
+</pre></div>
+
+<h2>
+<a name="the-darbak-task" class="anchor" href="#the-darbak-task"><span class="octicon octicon-link"></span></a>The "darbak" task</h2>
+
+<h3>
+<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h3>
+
+<p><em>Run this task with the <code>grunt darbak</code> command.</em></p>
+
+<p>Task targets, files and options may be specified according to the grunt <a href="http://gruntjs.com/configuring-tasks">Configuring tasks</a> guide.</p>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using <a href="http://gruntjs.com/">Grunt</a>.</p>
+
+<h2>
+<a name="release-history" class="anchor" href="#release-history"><span class="octicon octicon-link"></span></a>Release History</h2>
+
+<p><em>(Nothing yet)</em></p>
+
+<h2>
+<a name="misc" class="anchor" href="#misc"><span class="octicon octicon-link"></span></a>Misc</h2>
+
+<p>Re-factored from:</p>
+
+<ul>
+<li>
+<a href="https://github.com/gruntjs/grunt-contrib-copy/blob/65600edcd99ac911d0021e30827c080097d5a895/tasks/copy.js">grunt-contrib-copy task</a>, May 13, 2013.</li>
+<li>
+<a href="https://github.com/jashkenas/docco/blob/8fe2924dd7db9cfb5f6988627987b5738932b973/docco.litcoffee">docco</a>, June 25, 2013.</li>
+</ul><p>Licensed under the <a href="LICENSE-MIT">MIT license</a>.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/amitport" class="avatar"><img src="https://secure.gravatar.com/avatar/6c8951d1ff70410474d6bc8beee1ed5b?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a> <a href="https://github.com/amitport">amitport</a> maintains <a href="https://github.com/amitport/darbak">Darbak</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/amitport/darbak/tarball/master" class="tar">tar</a><a href="https://github.com/amitport/darbak/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
