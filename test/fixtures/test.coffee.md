@@ -1,6 +1,9 @@
 ## Demo
 
-This demo section is actually runnable code written in [literate](http://coffeescript.org/#literate)-[iced](http://maxtaco.github.io/coffee-script/)-[coffee-script](http://coffeescript.org)
+This demo section is actually runnable code written in [literate](http://coffeescript.org/#literate)-[iced](http://maxtaco.github.io/coffee-script/)-[coffee-script](http://coffeescript.org).
+
+You can view its source at [test.coffee.md](https://raw.github.com/amitport/darbak/master/test/fixtures/test.coffee.md).
+
 This section was rendered using:
 
 `for (var i = 0; i < test.sections.length; i++){`
@@ -11,17 +14,17 @@ This section was rendered using:
 
 `}`
 
-Notice that any client side rendering method, such as angular-js templates, could have easily been used. 
+but notice that any client side rendering method, such as angular-js templates, could have easily been used. 
 
-You can view the complete source of this section [here](https://raw.github.com/amitport/darbak/master/test/fixtures/test.coffee.md).
+---
 
-You can open the console and run this code using: `var t = new test()`
+You can open the console and run this code using `var t = new test()`
 
 	alert('welcome to darbak!')
-And don't forget it's **iced**-coffee-script:
+and don't forget that it's **iced**-coffee-script:
 
 	@saveForLater = (@later) -> 
 	await @saveForLater defer()
-The code waits until you call `t.later()`, only then it will run the next block:
+so the code can wait for you to call `t.later()` before running the next block
 
 	alert('now is later!')
