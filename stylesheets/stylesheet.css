@@ -265,6 +265,10 @@ a.code {
   -webkit-transition: opacity ease-in-out 0.3s;
 }
 
+code {
+  font-family: 'Monaco', 'Lucida Console', monospace;
+}
+
 a.zip:hover,
 a.tar:hover,
 a.code:hover {

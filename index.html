@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
+  <script type="text/javascript" src="javascripts/coffee-script-iced.js"></script>
+  <script type="text/javascript" src="javascripts/test.js"></script>
 
   <title>Darbak</title>
   <meta name="description" content="Compiles literate-iced-coffee-script and appends it with its source and formatted documentation.">
@@ -44,6 +46,13 @@
 </blockquote>
 
 <p>Useful for creating <a href="http://jashkenas.github.io/docco/">Docco</a>-like code pages that can run while being displayed, compile with client side templates, and be edited on the client side.</p>
+
+<script>
+	for (var i = 0; i < test.sections.length; i++){
+		document.write(test.sections[i].docsHtml);
+		document.write(test.sections[i].codeHtml);
+	}
+</script>
 
 <h2>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
